@@ -10,8 +10,7 @@
 		var settings = $.extend(
 			{
 				icon: null,
-				backgroundColor: '#ffffff',
-				opacity: 0.85,
+				backgroundColor: 'rgba(255,255,255,0.85)',
 			},
 			options
 		);
@@ -21,8 +20,7 @@
 		const loadingIcon = $('<span class="loading__icon"></span>');
 
 		loadingOverlay.css({
-			backgroundColor: settings.backgroundColor || '#ffffff',
-			opacity: settings.opacity || 0.75,
+			backgroundColor: settings.backgroundColor || 'rgba(255,255,255,0.85)',
 			position: ['HTML', 'BODY'].includes(loadingEl.prop('tagName'))
 				? 'fixed'
 				: 'absolute',

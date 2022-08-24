@@ -28,6 +28,5 @@ $('your-selector').loadingOverlay(true|false, {
 
 |Setting|Default Value|Description|
 |---|---|---|
-|icon|`null`|The overlay icon url.|
-|backgroundColor|`#ffffff`|The overlay background color.|
-|opacity|`0.85`|The overlay opacity.|
+|icon|`null`|Overlay icon url.|
+|backgroundColor|`rgba(255,255,255,0.85)`|Overlay background color.|
