@@ -1,3 +1,10 @@
+/*!
+ * Loading overlay v1.0.0
+ * https://github.com/windel07/loading-overlay.jquery
+ *
+ * Copyright (c) 2022 windel07
+ */
+
 (function ($) {
 	$.fn.loadingOverlay = function (status = true, options = {}) {
 		var settings = $.extend(
