@@ -33,7 +33,13 @@
 
 		loadingIcon.appendTo(loadingOverlay);
 
-		if (status) loadingEl.addClass('loading').prepend(loadingOverlay);
-		else loadingEl.removeClass('loading').children().eq(0).remove();
+		if (status) {
+			loadingEl.addClass('loading').prepend(loadingOverlay);
+		} else {
+			loadingEl.removeClass('loading');
+
+			if (loadingEl.children().eq(0).hasClass('loading__overlay'))
+				loadingEl.children().eq(0).remove();
+		}
 	};
 })(jQuery);
